@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="C:/Lab/customTimings.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div><img name="golden_area" src="http://www.referenceforbusiness.com/photos/performance-measurement-110.jpg" style="display: block; margin-left: auto; margin-right: auto" onload="imageLoaded();"/></div>
+        <div><img id="second" name="second" data-src="http://s.hswstatic.com/gif/brake-rotors-6.jpg" style="display: block; margin-left: auto; margin-right: auto" />
+        <script type="text/javascript">
+        function imageLoaded (argument) {
+            var img = document.getElementById("second");
+            if (!img.src) {
+                console.log("start loading another image");
+                img.src = img.getAttribute('data-src');
+            }
+        }
+        </script>
+
+        <script type="text/javascript">
+        $(document).load(setTimeout(function() { CustomLoadTiming.fetchUxLoadTimeFromResource('brake-rotors-6.jpg') }, 3000));
+        </script>
+    </body>
+
+</html>
