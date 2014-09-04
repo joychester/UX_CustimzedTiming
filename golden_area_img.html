@@ -7,10 +7,10 @@
     </head>
     <body>
         <div><img name="golden_area" src="http://www.referenceforbusiness.com/photos/performance-measurement-110.jpg" style="display: block; margin-left: auto; margin-right: auto" onload="imageLoaded();"/></div>
-        <div><img id="second" name="second" data-src="http://s.hswstatic.com/gif/brake-rotors-6.jpg" style="display: block; margin-left: auto; margin-right: auto" />
+        <div><img id="probe_img" name="probe_img" data-src="http://s.hswstatic.com/gif/brake-rotors-6.jpg" style="display: none; margin-left: auto; margin-right: auto" />
         <script type="text/javascript">
         function imageLoaded (argument) {
-            var img = document.getElementById("second");
+            var img = document.getElementById("probe_img");
             if (!img.src) {
                 console.log("start loading another image");
                 img.src = img.getAttribute('data-src');
